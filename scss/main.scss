@@ -1,0 +1,42 @@
+@import '_mixins';
+//web page width
+$row: 1140px;
+$md: 960px;
+$sm: 768px;
+$xs: 480px;
+//main color
+$a: #0c2d80;
+//second color
+$b: #f1b820;
+//link color
+$link: $a;
+// buttons color
+$btn: #0c2d80;
+$border: #cccccc;
+$text: #333333;
+$menu: #0c2d80;
+//social media color
+$facebook: #3b5993;
+$twitter: #55acee;
+$instagram: #181818;
+$linkedin: #0177b5;
+$google_plus: #d94733;
+$pinterest: #bd1e23;
+$youtube: #f80000;
+$vimeo: #1ab7ea;
+// Defaul fonts
+$regular: 'font_regular', Helvetica, Arial, sans-serif;
+//default italic font
+$italic: 'font_italic', Helvetica, Arial, sans-serif;
+//default bold font
+$bold: 'font_bold', Helvetica, Arial, sans-serif;
+/* FONTS
+   ========================================================================== */
+
+/* MAIN  FILES
+   ========================================================================== */
+@import 'components/01_reset';
+@import 'components/02_flexo';
+@import 'components/20_global';
+@import 'components/21_pages';
+@import 'components/99_responsive';

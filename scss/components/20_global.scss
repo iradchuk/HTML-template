@@ -1,0 +1,228 @@
+/* ==========================================================================
+   HELPERS
+   ========================================================================== */
+.row {
+  position: relative;
+  width: $row;
+  max-width: 100%;
+  margin: 0 auto;
+  @include for-size(row) {
+    width: 100%;
+    max-width: 94%;
+  }
+}
+#content {
+  padding: 40px 0;
+  @include for-size(row) {
+    padding: 20px 0;
+  }
+}
+#wrap {
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+.c {
+  clear: both;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.cfx {
+  &:after, &:before {
+    clear: both;
+    content: ' ';
+    display: table;
+  }
+}
+.bg-center {
+  -webkit-background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.no_select {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.underline {
+  display: inline-block;
+  position: relative;
+  &:after {
+    background: transparent;
+    content: '';
+    display: block;
+    height: 1px;
+    margin: auto;
+    transition: width .5s ease, background-color .5s ease;
+    width: 0;
+  }
+  &:hover:after {
+    background: $link;
+    width: 100%;
+  }
+}
+//https://www.grabient.com/
+.btn {
+  background: $btn;
+  background-image: linear-gradient(19deg, $btn 0%, darken($btn, 4%) 100%);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1;
+  outline: 0;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  appearance: none;
+  @include transition(all, .4s, ease);
+  @include for-size(sm) {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+  &:hover {
+    background: darken($btn, 8%);
+    @include shadow(2);
+  }
+  &:active {
+    background: darken($btn, 15%);
+  }
+}
+//[checkbox checkbox-999 use_label_element exclusive "1" "2" "3"]
+//.wpcf7-list-item{
+//    display: block;
+//    margin: 8px 0;
+//    color: #484848;
+//    label{
+//        display: inline-block;
+//        span{
+//            position: relative;
+//            display: inline-block;
+//            padding-left: 30px;
+//            cursor: pointer;
+//            vertical-align: top;
+//            &:before{
+//                position: absolute;
+//                top: 0;
+//                left: 0;
+//                width: 14px;
+//                height: 14px;
+//                content: '';
+//                border: 1px solid #ccc;;
+//            }
+//            &:after{
+//                font-size: 21px;
+//                font-weight: 700;
+//                position: absolute;
+//                top: -10px;
+//                left: 2px;
+//                content: '\2713';
+//                opacity: 0;
+//                color: #ccc;
+//            }
+//        }
+//        input{
+//            display: none;
+//            &:checked+span{
+//                &:after{
+//                    opacity: 1;
+//                }
+//            }
+//        }
+//    }
+//}
+
+/* ==========================================================================
+   SOCIAL LINK
+   ========================================================================== */
+.s_link {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0;
+  text-align: center;
+  width: auto;
+  a {
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    height: 40px;
+    margin: 0 2px;
+    position: relative;
+    width: 40px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    @include transform (translate3d(0, 0, 0));
+    @include transition(all, .5s, cubic-bezier(.165, .84, .44, 1));
+    @include shadow(1);
+    &:before {
+      color: #ffffff;
+      font-size: 20px;
+      @include center();
+    }
+    &:hover {
+      @include shadow(3);
+    }
+    &.fa-facebook {
+      &:hover {
+        background: $facebook;
+      }
+    }
+    &.fa-twitter {
+      &:hover {
+        background: $twitter;
+      }
+    }
+    &.fa-instagram {
+      &:hover {
+        background: $instagram;
+      }
+    }
+    &.fa-linkedin {
+      &:hover {
+        background: $linkedin;
+      }
+    }
+    &.fa-google-plus {
+      &:hover {
+        background: $google_plus;
+      }
+    }
+    &.fa-pinterest {
+      &:hover {
+        background: $pinterest;
+      }
+    }
+    &.fa-youtube {
+      &:hover {
+        background: $youtube;
+      }
+    }
+    &.fa-vimeo {
+      &:hover {
+        background: $vimeo;
+      }
+    }
+  }
+}
+.block-right {
+  text-align: right;
+}
+.block-center {
+  text-align: center;
+}
+.acf-map {
+  width: 100%;
+  height: 400px;
+  border: #ccc solid 1px;
+  margin: 20px 0;
+}
+.acf-map img {
+   max-width: inherit !important;
+}
