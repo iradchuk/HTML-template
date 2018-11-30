@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="scss/main.css" rel="stylesheet" type="text/css">
     <link href="scss/components/100_lib.css" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://file.myfontastic.com/UCh5HgwSYvMAtExGhpHLqd/icons.css" rel="stylesheet">
     <meta name="theme-color" content="#000">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/lib.js"></script>

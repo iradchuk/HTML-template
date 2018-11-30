@@ -142,71 +142,56 @@
 /* ==========================================================================
    SOCIAL LINK
    ========================================================================== */
-.s_link {
-  cursor: pointer;
-  display: inline-block;
+.s-link {
   font-size: 0;
-  text-align: center;
+  display: inline-block;
   width: auto;
+  cursor: pointer;
+  text-align: center;
   a {
-    border-radius: 50%;
-    color: #ffffff;
+    position: relative;
     display: inline-block;
+    width: 40px;
     height: 40px;
     margin: 0 2px;
-    position: relative;
-    width: 40px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
+    color: #ffffff;
+    border-radius: 50%;
     @include transform (translate3d(0, 0, 0));
     @include transition(all, .5s, cubic-bezier(.165, .84, .44, 1));
     @include shadow(1);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     &:before {
-      color: #ffffff;
       font-size: 20px;
+      color: #ffffff;
       @include center();
     }
     &:hover {
       @include shadow(3);
     }
-    &.fa-facebook {
+    &.icon-facebook {
       &:hover {
         background: $facebook;
       }
     }
-    &.fa-twitter {
+    &.icon-twitter {
       &:hover {
         background: $twitter;
       }
     }
-    &.fa-instagram {
+    &.icon-instagram {
       &:hover {
         background: $instagram;
       }
     }
-    &.fa-linkedin {
+    &.icon-linkedin {
       &:hover {
         background: $linkedin;
       }
     }
-    &.fa-google-plus {
-      &:hover {
-        background: $google_plus;
-      }
-    }
-    &.fa-pinterest {
-      &:hover {
-        background: $pinterest;
-      }
-    }
-    &.fa-youtube {
+    &.icon-youtube {
       &:hover {
         background: $youtube;
-      }
-    }
-    &.fa-vimeo {
-      &:hover {
-        background: $vimeo;
       }
     }
   }

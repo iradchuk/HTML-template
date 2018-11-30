@@ -1,19 +1,17 @@
 /* ==========================================================================
     swiper source
-    http://idangero.us/swiper/
+    https://raw.githubusercontent.com/nolimits4web/Swiper/master/dist/js/swiper.min.js
     Fancybox source
-    http://fancyapps.com/fancybox/3/
+    https://raw.githubusercontent.com/fancyapps/fancybox/master/dist/jquery.fancybox.min.js
     Selectric source
-    http://selectric.js.org/
-    Remodal source
-    http://vodkabears.github.io/remodal/
+    https://raw.githubusercontent.com/lcdsantos/jQuery-Selectric/master/public/jquery.selectric.min.js
     Date Picker
-    https://github.com/amsul/pickadate.js/edit/master/lib/compressed/picker.js
+    https://raw.githubusercontent.com/amsul/pickadate.js/master/lib/compressed/picker.js
     https://raw.githubusercontent.com/amsul/pickadate.js/master/lib/compressed/picker.date.js
     Malihu custom scrollbar
     https://raw.githubusercontent.com/malihu/malihu-custom-scrollbar-plugin/master/js/minified/jquery.mCustomScrollbar.min.js
-    css3animate-it
-    https://raw.githubusercontent.com/Tusko/WP-Anatomy/master/js/libs/css3animate-it.js
+    AOS
+    https://raw.githubusercontent.com/michalsnik/aos/master/dist/aos.js
   ========================================================================== */
 
 // @formatter:off
@@ -85,7 +83,7 @@ function getCookie(cname) {
 
 $(document).ready(function () {
     "use strict";
-    $(".mobile_nav").find('.menu-item-has-children>a').after('<i class="fa fa-angle-down sub-anchor" aria-hidden="true"></i>');
+    $(".mobile_nav").find('.menu-item-has-children>a').after('<i class="icon-angle-down sub-anchor"></i>');
     $('.burger').click(function () {
         $(this).toggleClass('is-active');
         $("body").toggleClass('mobile_menu_active');
@@ -97,6 +95,16 @@ $(document).ready(function () {
         return false;
     });
     $(".menu-item-has-children i").click(function (event) {
-        $(this).toggleClass('fa-angle-down fa-angle-up').next().slideToggle("fast");
+        $(this).toggleClass('icon-angle-down icon-angle-up').next().slideToggle("fast");
+    });
+    /*Contact form7 - close validation error on click*/
+    $(this).on('mouseenter', '.wpcf7-not-valid-tip', function () {
+       // $(this).prev().trigger('focus');
+        $(this).fadeOut(500, function () {
+            $(this).remove();
+        });
+    });
+    $(".wpcf7-response-output").click(function (event) {
+        $(this).slideUp(400);
     });
 });
