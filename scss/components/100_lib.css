@@ -1,1 +1,200 @@
-//
+/* ==========================================================================
+    swiper source
+    https://raw.githubusercontent.com/nolimits4web/Swiper/master/dist/css/swiper.min.css
+    Fancybox source
+    https://raw.githubusercontent.com/fancyapps/fancybox/master/dist/jquery.fancybox.min.css
+    Selectric source
+    https://raw.githubusercontent.com/lcdsantos/jQuery-Selectric/master/public/selectric.css
+    Date Picker
+    https://raw.githubusercontent.com/amsul/pickadate.js/master/lib/compressed/themes/default.css
+    https://raw.githubusercontent.com/amsul/pickadate.js/master/lib/compressed/themes/default.date.css
+    Malihu custom scrollbar
+    https://raw.githubusercontent.com/malihu/malihu-custom-scrollbar-plugin/master/jquery.mCustomScrollbar.min.css
+    css3animateIt
+    https://raw.githubusercontent.com/Tusko/WP-Anatomy/master/style/libs/css3animateIt.min.css
+  ========================================================================== */
+@charset "UTF-8";
+@font-face {
+  font-family: "fontastic";
+  src:url("../../fonts/fontastic.eot");
+  src:url("../../fonts/fontastic.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/fontastic.woff") format("woff"),
+    url("../../fonts/fontastic.ttf") format("truetype"),
+    url("../../fonts/fontastic.svg#fontastic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[data-icon]:before {
+  font-family: "fontastic" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="i-"]:before,
+[class*=" i-"]:before {
+  font-family: "fontastic" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.i-angle-down:before {
+  content: "\61";
+}
+.i-angle-up:before {
+  content: "\62";
+}
+.i-fac:before {
+  content: "\63";
+}
+.i-ins:before {
+  content: "\65";
+}
+.i-twi:before {
+  content: "\66";
+}
+.i-lin:before {
+  content: "\67";
+}
+.i-vim:before {
+  content: "\69";
+}
+.i-pin:before {
+  content: "\6a";
+}
+.i-g-plus:before {
+  content: "\6b";
+}
+.i-ios-search:before {
+  content: "\6c";
+}
+.i-android-favorite-outline:before {
+  content: "\68";
+}
+.i-navicon:before {
+  content: "\6e";
+}
+.i-youtube-alt:before {
+  content: "\6d";
+}
+.i-angle-left:before {
+  content: "\64";
+}
+.i-angle-right:before {
+  content: "\6f";
+}
+.i-play-circle:before {
+  content: "\71";
+}
+.i-search:before {
+  content: "\70";
+}
+.i-shopping-cart:before {
+  content: "\72";
+}
+.i-ios-cart-outline:before {
+  content: "\73";
+}
+.i-heart-o:before {
+  content: "\74";
+}
+.i-exchange:before {
+  content: "\75";
+}
+.i-goo-plus:before {
+  content: "\76";
+}
+.i-yelp:before {
+  content: "\77";
+}
+.i-bars:before {
+  content: "\78";
+}
+.i-phone:before {
+  content: "\79";
+}
+.i-search-plus:before {
+  content: "\7a";
+}
+.i-calendar:before {
+  content: "\41";
+}
+.i-caret-down:before {
+  content: "\42";
+}
+.i-caret-left:before {
+  content: "\43";
+}
+.i-caret-right:before {
+  content: "\44";
+}
+.i-caret-up:before {
+  content: "\45";
+}
+.i-chevron-down:before {
+  content: "\46";
+}
+.i-chevron-left:before {
+  content: "\47";
+}
+.i-chevron-right:before {
+  content: "\48";
+}
+.i-chevron-up:before {
+  content: "\49";
+}
+.i-search-minus:before {
+  content: "\4a";
+}
+.i-search-1:before {
+  content: "\4b";
+}
+.i-tumblr:before {
+  content: "\4c";
+}
+.i-youtube:before {
+  content: "\4d";
+}
+.i-youtube-play:before {
+  content: "\4e";
+}
+.i-android-arrow-forward:before {
+  content: "\4f";
+}
+.i-android-arrow-up:before {
+  content: "\50";
+}
+.i-android-arrow-back:before {
+  content: "\51";
+}
+.i-android-arrow-down:before {
+  content: "\52";
+}
+.i-android-favorite:before {
+  content: "\53";
+}
+.i-ios-cart:before {
+  content: "\54";
+}
+.i-ios-arrow-back:before {
+  content: "\55";
+}
+.i-ios-arrow-down:before {
+  content: "\56";
+}
+.i-ios-arrow-forward:before {
+  content: "\57";
+}
+.i-ios-arrow-left:before {
+  content: "\58";
+}//
